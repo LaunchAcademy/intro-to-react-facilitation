@@ -1,4 +1,3 @@
-// import './app.scss';
 import React from "react"
 import ReactDOM from "react-dom"
 
@@ -35,6 +34,6 @@ let divElement =
 // }
 
 ReactDOM.render(
-  <divElement />,
+  divElement,
   document.getElementById('app')
 )
