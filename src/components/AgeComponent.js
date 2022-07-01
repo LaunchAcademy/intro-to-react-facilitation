@@ -1,5 +1,6 @@
 import React from "react"
 
+// if we passed props of `myAge` and `ageOfMyFriend`
 const AgeComponent = (props) => {
 
     // const myAge = 34
