@@ -1,29 +1,47 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-import GroceryMessage from "./components/GroceryMessage"
+import Message from "./components/Message"
 
+console.log("Hello from the React files")
 
-
-// const response = await fetch("/api/v1/secret-message")
-// const messageFromTheBackend = await response.json()
-
-const messageFromTheBackend = "Drink your ovaltine!"
-
-// console.log("Hello from the React files")
-
-ReactDOM.render(
-    // GroceryMessage({ message: messageFromTheBackend }),    
-    <GroceryMessage 
-        message={messageFromTheBackend} 
-        otherText={"Foobar"} 
-    />,    
-    document.getElementById("app")
+// let message = "hello launchers!"
+// let messageElement = (
+//   <div>
+//     <h1>hello launchers!!!!!!</h1>
+//     <p>its friyayayayaya</p>
+//   </div>
+// )
+let firstNumber = 118
+let secondNumber = 18
+const messageGroup = (
+  <div id="message">
+    <Message numericValue={firstNumber} banana={"banananananana"} />
+    <Message numericValue={secondNumber} equation={1} />
+  </div>
 )
 
-
-
-
+// ReactDOM.render(messageElement, document.getElementById("app"))
+ReactDOM.render(messageGroup, document.getElementById("app"))
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // create two arbitrary variables
 // because they aren't going to change in this program, use const
 // const myAge = 34
